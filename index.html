@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<head>
+    <title>
+        Image Gallery App
+    </title>
+    <link rel="stylesheet" href="lightbox.min.css">
+    <script src="lightbox-plus-jquery.min.js"></script>
+</head>
+
+<body bgcolor="grey">
+    <h1><a href="#" class="hover"><span>Picture Gallery App</span></a></h1>
+    <div class="gallery">
+        <a href="pic21.jpg" data-lightbox="mygallery" data-title="Leopord"><img src="pic21.jpg"></a>
+        <a href="pic22.jpg" data-lightbox="mygallery"><img src="pic22.jpg"></a>
+        <a href="pic23.jpg" data-lightbox="mygallery"><img src="pic23.jpg"></a>
+        <a href="pic24.jpg" data-lightbox="mygallery"><img src="pic24.jpg"></a>
+        <a href="pic25.jpg" data-lightbox="mygallery"><img src="pic25.jpg"></a>
+        <a href="pic26.jpg" data-lightbox="mygallery"><img src="pic26.jpg"></a>
+        <a href="pic27.jpg" data-lightbox="mygallery"><img src="pic27.jpg"></a>
+        <a href="pic28.jpg" data-lightbox="mygallery"><img src="pic28.jpg"></a>
+        <a href="pic29.jpg" data-lightbox="mygallery"><img src="pic29.jpg"></a>
+        <a href="pic30.jpg" data-lightbox="mygallery"><img src="pic30.jpg"></a>
+        <a href="pic31.jpg" data-lightbox="mygallery"><img src="pic31.jpg"></a>
+        <a href="pic32.jpg" data-lightbox="mygallery"><img src="pic32.jpg"></a>
+        <a href="pic33.jpg" data-lightbox="mygallery"><img src="pic33.jpg"></a>
+        <a href="pic34.jpg" data-lightbox="mygallery"><img src="pic34.jpg"></a>
+        <a href="pic35.jpg" data-lightbox="mygallery"><img src="pic35.jpg"></a>
+        <a href="pic36.jpg" data-lightbox="mygallery"><img src="pic36.jpg"></a>
+        <a href="pic37.jpg" data-lightbox="mygallery"><img src="pic37.jpg"></a>
+        <a href="pic38.jpg" data-lightbox="mygallery"><img src="pic38.jpg"></a>
+        <a href="pic39.jpg" data-lightbox="mygallery"><img src="pic39.jpg"></a>
+        <a href="pic40.jpg" data-lightbox="mygallery"><img src="pic40.jpg"></a>
+
+    </div>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #0c1022;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 30px 0 50px;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 50px;
+        }
+        .hover{
+            color: rgb(64, 1, 225);
+            
+           
+        }
+
+        span{
+            background: #3eff37;
+            height: 100%;
+            width: 0;
+           
+           
+            bottom: 0;
+            z-index: -1;
+            transition: 0.5s;
+            text-transform: uppercase;
+
+        }
+        
+        .hover:hover{
+            cursor: pointer;
+            color: #f06;
+        }
+
+        .gallery {
+            margin: 10px 50px;
+
+        }
+
+        .gallery img {
+            width: 230px;
+            padding: 5px;
+            filter: grayscale(100%);
+            transition: 1s;
+        }
+
+        .gallery img:hover {
+            filter: grayscale(0);
+            transform: scale(1.1);
+        }
+    </style>
+
+</body>
